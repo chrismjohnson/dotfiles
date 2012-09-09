@@ -1,0 +1,5 @@
+#!/bin/bash
+
+rm -f ~/.gitconfig && ln -s ~/Projects/dotfiles/git/gitconfig ~/.gitconfig
+rm -f ~/.bash_profile && ln -s ~/Projects/dotfiles/bash/bash_profile ~/.bash_profile
+rm -f ~/.bashrc && ln -s ~/Projects/dotfiles/bash/bashrc ~/.bashrc
