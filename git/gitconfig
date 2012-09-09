@@ -1,0 +1,5 @@
+[user]
+	name = Chris M Johnson
+	email = chris@chrismjohnson.com
+[credential]
+	helper = osxkeychain
