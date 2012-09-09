@@ -3,3 +3,5 @@
 	email = chris@chrismjohnson.com
 [credential]
 	helper = osxkeychain
+[merge]
+        tool = vimdiff
