@@ -1,0 +1,6 @@
+alias la='ls -lA'
+alias ll='ls -l'
+alias lt='ls -lt'
+alias lr='ls -ltr'
+
+alias mkdir='mkdir -p'
