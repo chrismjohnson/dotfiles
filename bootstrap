@@ -15,3 +15,4 @@ rm -rf ~/Library/Application\ Support/Sublime\ Text\ 2\Pristine\ Packages/ && ln
 
 # Vim
 rm -rf ~/.vimrc && ln -s ~/Projects/dotfiles/vim/vimrc ~/.vimrc
+mkdir -p ~/.vim && ln -s ~/Projects/dotfiles/vim/colors ~/.vim/colors
