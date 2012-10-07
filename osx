@@ -1,0 +1,45 @@
+# TextMate
+defaults write com.macromates.textmate OakDocumentDisableFSMetaData 1
+
+# Kill Dashboard
+defaults write com.apple.dashboard mcx-disabled -boolean YES && killall Dock
+
+# Sync TextMate
+ln -s ~/Dropbox/Library/TextMate ~/Library/Application\ Support/TextMate
+
+# Sync Adium
+ln -s ~/Dropbox/Library/Adium/Logs ~/Library/Application\ Support/Adium\ 2.0/Users/Default/Logs
+
+# Disable Spotlight Icon (Snow Leopard)
+cd /System/Library/CoreServices/
+sudo mv Search.bundle/ Search2.bundle/
+
+# Restart SystemUIServer
+ps aux | grep SystemUIServer
+kill appropriate process
+
+# Disable Spotlight Icon (Lion)
+sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
+killall SystemUIServer
+
+# Enable Spotlight Icon (Lion)
+sudo chmod 755 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
+killall SystemUIServer
+
+# Disable .DS_Store files on network volumes
+defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+
+# Show hidden files/folders
+defaults write com.apple.finder AppleShowAllFiles TRUE
+
+# Expand save panel by default
+defaults write -g NSNavPanelExpandedStateForSaveMode -bool true
+
+# Expand print panel by default
+defaults write -g PMPrintingExpandedStateForPrint -bool true
+
+# Disable Spaces animations
+defaults write com.apple.dock workspaces-swoosh-animation-off -bool YES && killall Dock
+
+# Enable Spaces animations
+defaults delete com.apple.dock workspaces-swoosh-animation-off && killall Dock
