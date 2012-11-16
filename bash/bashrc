@@ -2,7 +2,7 @@
 [ -z "$PS1" ] && return
 
 HISTCONTROL=erasedups
-HISTIGNORE="pwd*:ls*:ll*:exit*:history*"
+HISTIGNORE="pwd*:ls*:ll*:exit*:history*:clear*"
 
 # append to the history file, don't overwrite it
 shopt -s histappend
