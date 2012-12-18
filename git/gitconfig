@@ -1,9 +1,7 @@
 [user]
-	name = Chris M Johnson
-	email = chris@chrismjohnson.com
+    name = Chris M Johnson
+    email = chris@chrismjohnson.com
 [credential]
-	helper = osxkeychain
+    helper = osxkeychain
 [merge]
-        tool = vimdiff
-[push]
-	default = simple
+    tool = vimdiff
