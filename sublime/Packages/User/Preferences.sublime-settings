@@ -13,6 +13,8 @@
 	"tab_completion": false,
 	"tab_size": 4,
 	"theme": "Soda Dark.sublime-theme",
-	"translate_tabs_to_spaces": false,
+	"translate_tabs_to_spaces": true,
+	"detect_indentation": false,
+	"use_tab_stops": true,
 	"word_wrap": false
 }
