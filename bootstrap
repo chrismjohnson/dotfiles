@@ -1,18 +1,18 @@
 #!/bin/bash
 
 # Bash
-rm -f ~/.bash_aliases&& ln -s ~/Projects/dotfiles/bash/bash_aliases ~/.bash_aliases
-rm -f ~/.bash_profile && ln -s ~/Projects/dotfiles/bash/bash_profile ~/.bash_profile
-rm -f ~/.bashrc && ln -s ~/Projects/dotfiles/bash/bashrc ~/.bashrc
+rm -f ~/.bash_aliases && ln -s ~/.dotfiles/bash/bash_aliases ~/.bash_aliases
+rm -f ~/.bash_profile && ln -s ~/.dotfiles/bash/bash_profile ~/.bash_profile
+rm -f ~/.bashrc && ln -s ~/.dotfiles/bash/bashrc ~/.bashrc
 
 # Git
-rm -f ~/.gitconfig && ln -s ~/Projects/dotfiles/git/gitconfig ~/.gitconfig
+rm -f ~/.gitconfig && ln -s ~/.dotfiles/git/gitconfig ~/.gitconfig
 
 # Sublime
-rm -rf ~/Library/Application\ Support/Sublime\ Text\ 2\Installed\ Packages/ && ln -s ~/Projects/dotfiles/sublime/Installed\ Packages ~/Library/Application\ Support/Sublime\ Text\ 2/Installed\ Packages
-rm -rf ~/Library/Application\ Support/Sublime\ Text\ 2\Packages/ && ln -s ~/Projects/dotfiles/sublime/Packages ~/Library/Application\ Support/Sublime\ Text\ 2/Packages
-rm -rf ~/Library/Application\ Support/Sublime\ Text\ 2\Pristine\ Packages/ && ln -s ~/Projects/dotfiles/sublime/Pristine\ Packages ~/Library/Application\ Support/Sublime\ Text\ 2/Pristine\ Packages
+rm -rf ~/Library/Application\ Support/Sublime\ Text\ 2\/Installed\ Packages && ln -s ~/.dotfiles/sublime/Installed\ Packages ~/Library/Application\ Support/Sublime\ Text\ 2/Installed\ Packages
+rm -rf ~/Library/Application\ Support/Sublime\ Text\ 2\/Packages && ln -s ~/.dotfiles/sublime/Packages ~/Library/Application\ Support/Sublime\ Text\ 2/Packages
+rm -rf ~/Library/Application\ Support/Sublime\ Text\ 2\/Pristine\ Packages && ln -s ~/.dotfiles/sublime/Pristine\ Packages ~/Library/Application\ Support/Sublime\ Text\ 2/Pristine\ Packages
 
 # Vim
-rm -rf ~/.vimrc && ln -s ~/Projects/dotfiles/vim/vimrc ~/.vimrc
-mkdir -p ~/.vim && ln -s ~/Projects/dotfiles/vim/colors ~/.vim/colors
+rm -rf ~/.vimrc && ln -s ~/.dotfiles/vim/vimrc ~/.vimrc
+mkdir -p ~/.vim && ln -s ~/.dotfiles/vim/colors ~/.vim/colors
