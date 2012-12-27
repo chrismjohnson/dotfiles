@@ -30,4 +30,4 @@ fi
 
 PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
-PS1="\e[0;31m[\t]\e[0m \e[0;37m\u@\h\e[0m \e[0;32m\w\e[0m$(__git_ps1)\n$ "
+PS1="\e[0;31m[\t]\e[0m \e[0;37m\u@\h\e[0m \e[0;32m\w\e[0m\$(__git_ps1)\n$ "
