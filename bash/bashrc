@@ -20,9 +20,14 @@ fi
 
 # Load bin directory, if exists.
 if [ -d ~/bin ] ; then
-  PATH=~/bin:"${PATH}"
+    PATH=~/bin:"${PATH}"
+fi
+
+# Load git-completion, if exists.
+if [ -f ~/bin/git-completion.bash ] ; then
+    . ~/bin/git-completion.bash
 fi
 
 PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
-PS1="\e[0;31m[\t]\e[0m \e[0;37m\u@\h\e[0m \e[0;32m\w\e[0m\n$ "
+PS1="\e[0;31m[\t]\e[0m \e[0;37m\u@\h\e[0m \e[0;32m\w\e[0m$(__git_ps1)\n$ "

@@ -7,6 +7,7 @@ rm -f ~/.bashrc && ln -s ~/.dotfiles/bash/bashrc ~/.bashrc
 
 # Git
 rm -f ~/.gitconfig && ln -s ~/.dotfiles/git/gitconfig ~/.gitconfig
+ln -s ~/.dotfiles/git/git-completion.bash ~/bin/git-completion.bash
 
 # Sublime
 rm -rf ~/Library/Application\ Support/Sublime\ Text\ 2\/Installed\ Packages && ln -s ~/.dotfiles/sublime/Installed\ Packages ~/Library/Application\ Support/Sublime\ Text\ 2/Installed\ Packages

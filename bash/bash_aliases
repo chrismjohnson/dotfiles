@@ -4,3 +4,7 @@ alias lt='ls -lt'
 alias lr='ls -ltr'
 
 alias mkdir='mkdir -p'
+
+alias errors="ssh rsyslog.ewr01.tumblr.net"
+alias m="mkdir /Volumes/dev && sshfs -o follow_symlinks dev:/var/www/apps /Volumes/dev"
+alias um="umount /Volumes/dev"
